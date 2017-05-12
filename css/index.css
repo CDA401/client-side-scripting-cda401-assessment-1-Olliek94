@@ -1,0 +1,16 @@
+#wrapper{
+    border-color: blue;
+    background-color: purple;
+}
+
+h1{
+    text-align: center;
+    color: red;
+}
+
+body{
+    font-family: "Arial";
+    color: darkblue;
+}
+
+

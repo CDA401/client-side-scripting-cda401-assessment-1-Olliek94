@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Order</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <link rel="stylesheet" href="css/order.css">
+        <link rel="icon" href="favicon.png">
+            <script type="text/javascript" src="js/orderSupport.js"></script>
+    </head>
+    
+    <body onload="orderSupport()">
+        <div id="wrapper">
+        <h1>Order a Pizza</h1>
+        <p>
+            <a href ="contact.html">Contact Us</a>
+        </p>
+        
+        <p>
+            <a href ="index.html">Homepage</a>
+        </p>
+        
+        <p>Order our freshly baked pizza's using the menu below.</p>
+        <div id="form">
+        <form name="orderForm" onsubmit="return validateForm()" method="post">
+            <p>Select your pizza base <br />
+                <input type="radio" name="base" value="base_small" /> Small <span class="price">£5</span>
+                <input type="radio" name="base" value="base_medium" /> Medium <span class="price">£7.50</span>
+                <input type="radio" name="base" value="base_large" /> Large <span class="price">£10</span>
+                <input type="radio" name="base" value="base_xl" /> Extra Large <span class="price">£12.50</span>
+            </p>
+            <p>Select your topping <br />
+                <input type="radio" name="topping" value="cheese" /> Cheese <span class="price">£0.20</span>
+            </p>
+            <p>Extras <br />
+                <input type="radio" name="extras" value="chips" /> Chips <span class="price">£1.50</span>
+            </p>
+            <p>Delivery information </p>
+            <p>Address Line 1 <br />
+                <input type="text" name="address_first_line" placeholder="First line of address" />
+            </p>
+            <p>Postcode <br />
+                <input type="text" name="postcode" placeholder="Postcode" />
+            </p>
+            <p>
+                <button type="submit" value="place_order">Place Order</button>
+                <button type="reset" value="reset">Reset</button>
+            </p>
+
+        </form>
+        </div>
+
+        <div id="validationResults"></div>
+        </div>
+    </body>
+</html>
