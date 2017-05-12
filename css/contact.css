@@ -4,8 +4,13 @@ h1{
 }
 
 #wrapper{
-    background-color:purple;
+    background-color:lightblue;
 }
-body{
+#body{
     text-align:left;
+}
+
+#form{
+    background-color:green;
+    padding:50px;
 }

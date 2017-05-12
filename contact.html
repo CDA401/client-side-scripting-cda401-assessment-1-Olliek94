@@ -23,28 +23,29 @@
         
         <p>Please use the below form to contact us, we will respond to your enquiry as soon as possible.</p>
         
-        <form name="contactForm" onsubmit="return validateForm()" method="post">
-            <p>First name <br />
-                <input type="text" name="first_name" placeholder="First name" />
-            </p>
-            <p>Last name <br />
-                <input type="text" name="last_name" placeholder="Last name" />
-            </p>
-            <p>Email <br />
-                <input type="text" name="email" placeholder="Email" />
-            </p>
-            <p>Phone <br />
-                <input type="text" name="phone" placeholder="Phone" />
-            </p>
-            <p>Message <br />
-                <input type="text" name="message" placeholder="Message" />
-            </p>
-            <p>
-                <input type="submit" value="Send" />
-            </p>
-
-        </form>
-
+        <div id="form">
+            <form name="contactForm" onsubmit="return validateForm()" method="post">
+                <p>First name <br />
+                    <input type="text" name="first_name" placeholder="First name" />
+                </p>
+                <p>Last name <br />
+                    <input type="text" name="last_name" placeholder="Last name" />
+                </p>
+                <p>Email <br />
+                    <input type="text" name="email" placeholder="Email" />
+                </p>
+                <p>Phone <br />
+                    <input type="text" name="phone" placeholder="Phone" />
+                </p>
+                <p>Message <br />
+                    <input type="text" name="message" placeholder="Message" />
+                </p>
+                <p>
+                    <input type="submit" value="Send" />
+                </p>
+    
+            </form>
+        </div>
         <div id="validationResults"></div>
 
         <h2>Our location</h2>

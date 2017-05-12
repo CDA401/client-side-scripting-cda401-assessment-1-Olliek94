@@ -1,12 +1,18 @@
 #wrapper{
-    background-color:purple;
+    background-color:lightblue;
+    margin:10px;
+    padding:10px;
+    border:10px;
+    border-color:red;
 }
 
 #form{
     background-color:green;
+    width:250px;
 }
 
 h1{
     text-align:center;
+    color:red;
 }
 
