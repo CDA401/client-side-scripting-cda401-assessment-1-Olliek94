@@ -44,14 +44,16 @@ function validateForm() {
 
     // Pizza topping
     var pizzaToppings = document.getElementsByName("topping");
-    var selectedTopping = '';
+    // Could be more than 1 topping.
+    var selectedToppings = [];
     for (i=0; i< pizzaToppings.length; i++) {
         if (pizzaToppings[i].checked) {
-            selectedTopping = pizzaToppings[i].value;
+            selectedToppings.push(pizzaToppings[i].value);
         }
     }
+    
     // No checked value
-    if (selectedTopping.length === 0) {
+    if (selectedToppings.length === 0) {
         validationResults.push('Please select a pizza topping');
     }
 

@@ -1,16 +1,24 @@
 #wrapper{
     border-color: blue;
     background-color: lightblue;
+    font-family:"Arial";
+    font-size:24px;
 }
 
 h1{
     text-align: center;
     color: red;
+    font-family:"Arial";
+    font-size:40px;
+    padding:0 0 0 50px;
+
+}
+
+div.header-block{
+    background-color:green;
+    min-height: 218px;
 }
 
 body{
-    font-family: "Arial";
     color:darkgreen;
 }
-
-

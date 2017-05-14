@@ -1,18 +1,33 @@
 #wrapper{
     background-color:lightblue;
     margin:10px;
-    padding:10px;
     border:10px;
     border-color:red;
+    font-family:"Arial";
+    font-size:24px;
 }
 
 #form{
-    background-color:green;
-    width:250px;
+    background-color:lightgreen;
+    width:650px;
+    margin: 0 auto;
+}
+
+#form input{
+    width: 300px;
 }
 
 h1{
-    text-align:center;
-    color:red;
+    text-align: center;
+    color: red;
+    font-family:"Arial";
+    font-size:40px;
+    padding:0 0 0 50px;
+
+}
+
+div.header-block{
+    background-color:green;
+    min-height: 218px;
 }
 

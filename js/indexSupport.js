@@ -1,3 +1,12 @@
+function rollover(thumbnailImage) {
+    thumbnailImage.src="img/pizza_200_124px.jpg";
+}
+
+function shrinkImage(fullsizeImage) {
+    fullsizeImage.src="img/pizza_thumbnail.jpg";
+}
+
+
 /**
  * Get time now in human readable format.
  *

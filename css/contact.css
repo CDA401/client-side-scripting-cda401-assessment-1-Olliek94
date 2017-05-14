@@ -1,16 +1,32 @@
 h1{
-    text-align:center;
-    color:red;
+    text-align: center;
+    color: red;
+    font-family:"Arial";
+    font-size:40px;
+    padding:0 0 0 50px;
+
 }
+
+div.header-block{
+    background-color:green;
+    min-height: 218px;
+}
+
 
 #wrapper{
     background-color:lightblue;
+    font-family:"Arial";
+    font-size:24px;
 }
 #body{
     text-align:left;
+    font-family:"Arial";
 }
 
 #form{
-    background-color:green;
-    padding:50px;
+    font-family:"Arial";
+    background-color:lightgreen;
+    padding:100px;
+    width:600px;
+    margin: 0 auto;
 }
