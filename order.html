@@ -4,21 +4,32 @@
         <title>Order</title>
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
         <link rel="stylesheet" href="css/order.css">
-        <link rel="icon" href="favicon.png">
+        <link rel="icon" href="img/favicon.png">
             <script type="text/javascript" src="js/orderSupport.js"></script>
     </head>
-    
-    <body onload="orderSupport()">
+
+    <body>
         <div id="wrapper">
-        <h1>Order a Pizza</h1>
+         <div class="header-block">
+             <img style="float: left;" src="img/colosseum.png" alt="Thumbnail Colosseum image"/>
+
+             <div style="float: left;" >
+         <h1>
+              Order Pizza
+         </h1>
+             </div>
+             <img style="float: right;" src="img/piza.png" alt="thumbnail Leaning Tower graphic">
+
+         </div>
+         <div style="clear:both;">
         <p>
             <a href ="contact.html">Contact Us</a>
         </p>
-        
+
         <p>
             <a href ="index.html">Homepage</a>
         </p>
-        
+
         <p>Order our freshly baked pizza's using the menu below.</p>
         <div id="form">
         <form name="orderForm" onsubmit="return validateForm()" method="post">
@@ -28,11 +39,15 @@
                 <input type="radio" name="base" value="base_large" /> Large <span class="price">£10</span>
                 <input type="radio" name="base" value="base_xl" /> Extra Large <span class="price">£12.50</span>
             </p>
-            <p>Select your topping <br />
-                <input type="radio" name="topping" value="cheese" /> Cheese <span class="price">£0.20</span>
+            <p>Select your topping(s) <br />
+                <input type="checkbox" name="topping" value="cheese" /> Cheese <span class="price">£0.20</span>
+                <input type="checkbox" name="topping" value="mushrooms" /> Mushrooms <span class="price">£0.40</span>
+                <input type="checkbox" name="topping" value="ham" /> Ham <span class="price">£0.50</span>
+                <input type="checkbox" name="topping" value="anchovies" /> Anchovies <span class="price">£0.60</span>
             </p>
             <p>Extras <br />
-                <input type="radio" name="extras" value="chips" /> Chips <span class="price">£1.50</span>
+                <input type="checkbox" name="extras" value="chips" /> Chips <span class="price">£1.50</span>
+                <input type="checkbox" name="extras" value="garlicBread" /> Garlic Bread <span class="price">£2.00</span>
             </p>
             <p>Delivery information </p>
             <p>Address Line 1 <br />

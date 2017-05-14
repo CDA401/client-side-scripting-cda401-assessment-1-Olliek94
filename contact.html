@@ -1,55 +1,74 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
+
         <title>Contact</title>
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
         <link rel="stylesheet" href="css/contact.css">
-        <link rel="icon" href="favicon.png">
+        <link rel="icon" href="img/favicon.png">
             <script type="text/javascript" src="js/contactSupport.js"></script>
     </head>
-    
-    <body onload="contactSupport()">
-     <div id="wrapper">   
-        <h1>Contact Us </h1>
-        
+
+    <body>
+     <div id="wrapper">
+         <div class="header-block">
+             <img style="float: left;" src="img/colosseum.png" alt="Thumbnail Colosseum image"/>
+
+             <div style="float: left;" >
+         <h1>
+              Contact Us
+         </h1>
+             </div>
+             <img style="float: right;" src="img/piza.png" alt="thumbnail Leaning Tower graphic">
+
+         </div>
+         <div style="clear:both;">
+
         <p>
             <a href ="order.html">Order Pizza</a>
         </p>
-        
+
         <p>
             <a href ="index.html">Homepage</a>
         </p>
-        
+
         <p>Please use the below form to contact us, we will respond to your enquiry as soon as possible.</p>
-        
+
         <div id="form">
-            <form name="contactForm" onsubmit="return validateForm()" method="post">
+            <form name="contactForm" onsubmit="return validateForm()">
                 <p>First name <br />
-                    <input type="text" name="first_name" placeholder="First name" />
+                    <input type="text" name="first_name" id="first_name" placeholder="First name" />
+                    <img src="img/green_tick_20_20.png" id="first_name_valid" style="display:none" alt="green_tick" />
+                    <img src="img/red_cross_20_20.png" id="first_name_invalid" style="display:none" alt="red_cross" />
                 </p>
                 <p>Last name <br />
-                    <input type="text" name="last_name" placeholder="Last name" />
+                    <input type="text" name="last_name" id="last_name" placeholder="Last name" />
+                    <img src="img/green_tick_20_20.png" id="last_name_valid" style="display:none" alt="green_tick" />
+                    <img src="img/red_cross_20_20.png" id="last_name_invalid" style="display:none" alt="red_cross" />
                 </p>
                 <p>Email <br />
-                    <input type="text" name="email" placeholder="Email" />
+                    <input type="text" name="email" id="email" placeholder="Email" />
+                    <img src="img/green_tick_20_20.png" id="email_valid" style="display:none" alt="green_tick" />
+                    <img src="img/red_cross_20_20.png" id="email_invalid" style="display:none" alt="red_cross" />
                 </p>
                 <p>Phone <br />
                     <input type="text" name="phone" placeholder="Phone" />
                 </p>
                 <p>Message <br />
-                    <input type="text" name="message" placeholder="Message" />
+                    <textarea name="message" id="message" placeholder="Message" rows=="4"/></textarea>
+                    <img src="img/green_tick_20_20.png" id="message_valid" style="display:none" alt="green_tick" />
+                    <img src="img/red_cross_20_20.png" id="message_invalid" style="display:none" alt="red_cross" />
                 </p>
                 <p>
-                    <input type="submit" value="Send" />
+                    <button type="submit" value="Send">Send</button>
                 </p>
-    
-            </form>
+
+             </form>
         </div>
         <div id="validationResults"></div>
 
         <h2>Our location</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2515.850430800755!2d-1.4023835842519911!3d50.90798357954109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487476b1943c33e9%3A0x7b3d2a7c433db059!2sSouthampton+Solent+University!5e0!3m2!1sen!2suk!4v1494431645367" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-     </div> 
+     </div>
     </body>
 </html>
